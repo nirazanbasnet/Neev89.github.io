@@ -3,6 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -452,3 +453,7 @@ body {
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+.hero-banner {
+  background-size: cover;
+  height: 100vh; }
