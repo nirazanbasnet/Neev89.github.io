@@ -1,0 +1,29 @@
+#footer {
+  background: $footerbg url("/assets/img/black-dot.png") repeat;
+  color: $white;
+}
+
+.footer-inner{
+  text-align: center;
+}
+
+.email-link {
+  font-size: 42px;
+  line-height: 50px;
+  color: $white;
+  overflow: hidden;
+  display: inline-block;
+  @include transition(all 0.3s linear);
+  &:hover {
+    color: $highlight;
+  }
+  &:before {
+    content: '';
+    background: url('/assets/img/social-link.png');
+    background-position: 0 -826px;
+    display: block;
+    width: 69px;
+    height: 68px;
+    margin: 0 auto 15px;
+  }
+}

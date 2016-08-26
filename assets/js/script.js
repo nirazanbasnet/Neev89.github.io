@@ -70,5 +70,18 @@ $(function() {
         animateHeadline($('.animated-letters'));
     }
 
-    initHeadline(); 
+    initHeadline();
+
+    /*-----Dropable & Draggable-----*/
+    $( ".social-link" ).draggable({
+        cursor: "crosshair",
+        revert: "valid",
+        containment: "#connect"
+    });
+    $( ".drag-place" ).droppable({
+        hoverClass: "social-drag-hover",
+        drop: function( event, ui ) {
+            window.open(ui.draggable.attr("href"));
+        }
+    });
 });

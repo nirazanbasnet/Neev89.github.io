@@ -41,6 +41,7 @@
   right: 0;
   text-align: center;
   z-index: 6;
+  padding: 0 10px;
 }
 
 .heading__title {
@@ -48,6 +49,7 @@
   font-family: 'Chewy', cursive;
   font-weight: normal;
   margin: 0;
+  font-size: 32px;
 }
 
 .in-touch{
@@ -111,7 +113,9 @@
   display: block;
   position: relative;
   color: $white;
-  margin: 20px 0 50px;
+  margin: 20px 0 40px;
+  font-size: 26px;
+  text-align: center;
   b {
     display: block;
     position: absolute;
@@ -121,8 +125,6 @@
     width: 100%;
     opacity: 0;
     color: $highlight;
-    font-size: 40px;
-    line-height: 48px;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
