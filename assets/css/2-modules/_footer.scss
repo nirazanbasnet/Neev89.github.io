@@ -12,6 +12,8 @@
   line-height: 50px;
   color: $white;
   overflow: hidden;
+  width: 100%;
+  word-wrap: break-word;
   display: inline-block;
   @include transition(all 0.3s linear);
   &:hover {

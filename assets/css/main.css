@@ -778,6 +778,8 @@ body {
   line-height: 50px;
   color: #fff;
   overflow: hidden;
+  width: 100%;
+  word-wrap: break-word;
   display: inline-block;
   transition: all 0.3s linear; }
   .email-link:hover {
