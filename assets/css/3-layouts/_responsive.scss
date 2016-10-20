@@ -9,3 +9,15 @@
     line-height: 48px;
   }
 }
+
+@media only screen and (min-width: 630px) {
+  .card {
+    lost-column: 1/2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    lost-column: 1/3;
+  }
+}

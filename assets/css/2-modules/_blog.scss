@@ -1,0 +1,114 @@
+.container.blog-wrap {
+  max-width: 1170px;
+}
+
+.card-wrap {
+  lost-utility: clearfix;
+  margin-top: 30px;
+  padding: 0px 10px;
+}
+
+.card-blog {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 50px 0 0;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  &.no-img {
+    &.blue {
+      background: linear-gradient(60deg, #26c6da, #0097a7);
+    }
+    &.green {
+      background: linear-gradient(60deg, #66bb6a, #388e3c);
+    }
+    &.purple {
+      background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+    }
+    .card-blog__content {
+      .text-info {
+        color: #fff;
+      }
+      .card-blog__description {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+.card-blog__image {
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -30px;
+  border-radius: 6px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    transition: all 300ms ease-in-out;
+    background: #565656;
+    .card-img {
+      transition: all 300ms ease-in-out;
+      opacity: 0.7;
+    }
+    .card-blog__title{
+      color: rgba(255,255,255,0.8);
+    }
+  }
+  .card-img {
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  .card-blog__title {
+    position: absolute;
+    bottom: 15px;
+    max-width: 310px;
+    z-index: 1;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+    right: 0;
+    margin: 0 auto;
+  }
+  a {
+    height: 100%;
+  }
+}
+
+.card-blog__content {
+  padding: 15px 30px;
+  .text-info {
+    color: #00bcd4;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  .card-blog__description {
+    color: #999999;
+    margin-bottom: 0;
+  }
+}
+
+.text-sub-info {
+  a {
+    color: #fff;
+    &:hover, &:focus, &:active {
+      color: rgba(255,255,255,0.8);
+    }
+  }
+}
+
+.view-all-btn {
+  text-align: center;
+  margin: 50px 0;
+  a {
+    color: #fff;
+  }
+}
