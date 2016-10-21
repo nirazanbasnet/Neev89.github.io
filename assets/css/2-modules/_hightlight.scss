@@ -1,0 +1,35 @@
+#highlight {
+  background-image: url("/assets/img/highlight-bg-1.jpg");
+  padding: 60px 25px !important;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  //&:before {
+  //  content:'';
+  //  position: absolute;
+  //  top: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  background: rgba(219, 219, 3, 0.4);
+  //  z-index: 1;
+  //}
+}
+
+.highlight-wrap__inner {
+  background-color: rgba(65, 41, 36, 0.3);
+  padding: 38px 0;
+  border: 7px double #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.big-text {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}

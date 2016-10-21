@@ -765,7 +765,7 @@ body {
 
 .card-wrap {
   margin-top: 30px;
-  padding: 0px 10px; }
+  padding: 0 10px; }
 
 .card-wrap:before{
   content: '';
@@ -780,7 +780,7 @@ body {
   display: inline-block;
   position: relative;
   width: 100%;
-  margin: 50px 0 0;
+  margin: 20px 0 0;
   border-radius: 6px;
   color: rgba(0, 0, 0, 0.87);
   background: #fff;
@@ -802,7 +802,7 @@ body {
   overflow: hidden;
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: -30px;
+  margin-top: 20px;
   border-radius: 6px;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
   .card-blog__image:hover {
@@ -854,6 +854,29 @@ body {
   margin: 50px 0; }
   .view-all-btn a {
     color: #fff; }
+
+#highlight {
+  background-image: url("/assets/img/highlight-bg-1.jpg");
+  padding: 60px 25px !important;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.highlight-wrap__inner {
+  background-color: rgba(65, 41, 36, 0.3);
+  padding: 38px 0;
+  border: 7px double #fff;
+  position: relative;
+  z-index: 2; }
+
+.big-text {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; }
 
 .draggable-monitor {
   background: url("/assets/img/connect-monitor.png") no-repeat center;
@@ -936,11 +959,12 @@ body {
   color: #fff; }
 
 .footer-inner {
-  text-align: center; }
+  text-align: center;
+  padding: 0px 10px; }
 
 .email-link {
-  font-size: 42px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 26px;
   color: #fff;
   overflow: hidden;
   width: 100%;
@@ -956,7 +980,19 @@ body {
     display: block;
     width: 69px;
     height: 68px;
-    margin: 0 auto 15px; }
+    margin: 0 auto 5px; }
+
+.copyright span {
+  font-size: 11px; }
+
+@media only screen and (min-width: 400px) {
+  .email-link {
+    font-size: 24px;
+    line-height: 32px; }
+    .email-link:before {
+      margin: 0 auto 15px; }
+  .copyright span {
+    font-size: 14px; } }
 
 @media only screen and (min-width: 480px) {
   .heading__title {
@@ -964,7 +1000,11 @@ body {
   .animated-letters {
     margin-bottom: 50px;
     font-size: 40px;
-    line-height: 48px; } }
+    line-height: 48px; }
+  #highlight {
+    padding: 90px 35px !important; }
+  .big-text {
+    font-size: 60px; } }
 
 @media only screen and (min-width: 630px) {
   .card {
@@ -994,4 +1034,21 @@ body {
     margin-right: 0;
     float: right; }
   .card:nth-child(3n + 1){
-    clear: both; } }
+    clear: both; }
+  #highlight {
+    padding: 100px 40px !important; }
+  .card-blog__image {
+    margin-top: -30px; }
+  .card-blog {
+    margin-bottom: 40px; }
+  .big-text {
+    font-size: 100px; }
+  .email-link {
+    font-size: 42px;
+    line-height: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  #highlight {
+    padding: 120px 50px !important; }
+  .big-text {
+    font-size: 160px; } }

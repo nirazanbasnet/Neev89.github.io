@@ -5,11 +5,13 @@
 
 .footer-inner{
   text-align: center;
+  padding: 0px 10px;
 }
 
 .email-link {
-  font-size: 42px;
-  line-height: 50px;
+  //font-size: 42px;
+  font-size: 18px;
+  line-height: 26px;
   color: $white;
   overflow: hidden;
   width: 100%;
@@ -26,6 +28,12 @@
     display: block;
     width: 69px;
     height: 68px;
-    margin: 0 auto 15px;
+    margin: 0 auto 5px;
+  }
+}
+
+.copyright {
+  span {
+    font-size: 11px;
   }
 }
