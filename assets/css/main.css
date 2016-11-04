@@ -451,6 +451,15 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #FFF498; }
+  body:before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none; }
+
+@media only screen and (min-width: 1050px) {
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop'; } }
 
 .btn {
   display: inline-block;
@@ -869,6 +878,13 @@ body {
   border: 7px double #fff;
   position: relative;
   z-index: 2; }
+  .highlight-wrap__inner .animated-letters {
+    margin: 0; }
+    .highlight-wrap__inner .animated-letters b {
+      opacity: 0;
+      color: #fff;
+      font-weight: bold;
+      text-transform: inherit; }
 
 .big-text {
   font-size: 40px;
