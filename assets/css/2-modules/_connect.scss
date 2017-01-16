@@ -1,5 +1,9 @@
+#connect {
+  background: url("../img/connect-bg.jpg") repeat center;
+}
+
 .draggable-monitor {
-  background: url("/assets/img/connect-monitor.png") no-repeat center;
+  background: url("../img/connect-monitor.png") no-repeat center;
   height: 243px;
   width: 100%;
   margin-top: 150px;
@@ -17,7 +21,7 @@
 }
 
 .drag-arrow {
-  background: url("/assets/img/draggable-arrow.png") no-repeat;
+  background: url("../img/draggable-arrow.png") no-repeat;
   width: 245px;
   height: 119px;
   position: absolute;
@@ -26,13 +30,13 @@
   z-index: 101;
 }
 
-.social-drag-hover{
-  background: rgba(250,104,98,.3);
-  border:#FA6862 2px dotted;
+.social-drag-hover {
+  background: rgba(250, 104, 98, .3);
+  border: #FA6862 2px dotted;
 }
 
 .social-link {
-  background: url("/assets/img/social-link.png") no-repeat top left;
+  background: url("../img/social-link.png") no-repeat top left;
   display: inline-block;
   position: absolute;
   width: 69px;

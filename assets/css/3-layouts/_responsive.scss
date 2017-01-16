@@ -66,6 +66,13 @@
     font-size: 42px;
     line-height: 50px;
   }
+
+  #codepen {
+    h1 {
+      font-size: 60px;
+      line-height: 68px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -75,5 +82,30 @@
 
   .big-text {
     font-size: 160px;
+  }
+
+  #codepen {
+    padding: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .connect-wrap {
+    .content-subheading {
+      display: none;
+    }
+  }
+  .draggable-monitor {
+    background: none;
+    text-align: center;
+    margin: 50px 0 0;
+    height: auto;
+  }
+  .drag-place, .drag-arrow {
+    display: none;
+  }
+  .social-link {
+    margin: 10px;
+    position: static !important;
   }
 }

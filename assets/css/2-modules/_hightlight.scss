@@ -1,20 +1,10 @@
 #highlight {
-  background-image: url("/assets/img/highlight-bg-1.jpg");
+  background-image: url("../img/highlight-bg-1.jpg");
   padding: 60px 25px !important;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   position: relative;
-  //&:before {
-  //  content:'';
-  //  position: absolute;
-  //  top: 0;
-  //  bottom: 0;
-  //  left: 0;
-  //  right: 0;
-  //  background: rgba(219, 219, 3, 0.4);
-  //  z-index: 1;
-  //}
 }
 
 .highlight-wrap__inner {

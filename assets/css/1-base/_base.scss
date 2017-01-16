@@ -130,7 +130,6 @@ body {
   background-image: none;
   border: 2px solid #66615B;
   border-radius: 20px;
-  box-sizing: border-box;
   font-size: 16px;
   font-weight: 500;
   padding: 7px 18px;
@@ -189,6 +188,11 @@ body {
 
 // Basic Styles
 
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -205,7 +209,7 @@ body {
 }
 
 .content {
-  padding: 50px 0;
+  padding: 50px 10px;
 }
 
 .container {
