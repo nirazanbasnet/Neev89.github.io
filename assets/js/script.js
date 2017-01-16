@@ -1,3 +1,4 @@
+
 //This is where we apply opacity to the arrow
 $(window).scroll( function(){
 
@@ -21,6 +22,11 @@ $(window).scroll( function(){
 });
 
 $(function() {
+
+    // site preloader
+    $(window).load(function(){
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+    });
 
     //From css-tricks for smooth scrolling:
     $('a[href*=#]:not([href=#])').click(function() {
